@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafeteria y Pasteleria Chan K'íiwik</title>
+    <link rel="icon" type="image/png" href="/img/Logo2.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="container-hero">
+        <div class="container hero">
+          <div class="customer-support">
+            <i class="fa-solid fa-headset"></i>
+            <div class="content-customer-support">
+              <span class="text">Atención al cliente</span>
+              <span class="number">999 - ### - ####</span>
+            </div>
+          </div>
+
+          <div class="container-logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            <h1 class="logo"><a href="/">Chan K'íiwik</a></h1>
+          </div>
+
+          <div class="container-user">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+            <div class="content-shopping-cart">
+              <span class="text">Carrito</span>
+              <span class="number">(0)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-navbar">
+        <nav class="navbar container">
+          <i class="fa-solid fa-bars"></i>
+          <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="cafeteria.html">Cafeteria</a></li>
+            <li><a href="pasteleria.html">Pasteleria</a></li>
+            <li><a href="manual.html">Manual Api</a></li>
+            <li><a href="info.html">Info</a></li>
+          </ul>
+
+          <form class="search-form">
+            <input type="search" placeholder="Buscar..." />
+            <button class="btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <P></P>
+    <h1><center>Manual para poder usar el Api Rest</center></h1>
+
+    <main id="content">
+ 
+      <article class="post clearfix">
+
+              <h2 class="post-title"><a href="#">¿Que es un Api Rest?</a></h2>
+
+          <p class="text-justify" >
+          <FONT SIZE=2>
+            Una API REST es una forma de permitir que diferentes programas de ordenador se comuniquen entre sí a través de Internet. 
+            Ya que la comunicación debe darse a través de protocolos y estándares para enviar y recibir datos, estas APIs están diseñadas bajo los principios de REST (que significa Representational State Transfer) y son útiles para interacciones simples.
+            En otras palabras, son el puente de comunicación entre frontend y backend.
+          </font>
+        </p>
+
+        <center><h5 class="post-title"> Principios </h5> </center>
+
+          <p class="text-justify" >
+            <FONT SIZE=2>
+              Una API RESTful es una interfaz que utiliza los principios de REST para comunicarse hacia y desde un servidor. El principio más importante en las APIs RESTful es el uso de los métodos HTTP:
+            </font>
+          </p>
+
+          <p class="text-justify" >
+            <FONT SIZE=2>
+              <ul>
+                <li>GET</li>
+                <li>POST</li>
+                <li>PUT</li>
+                <li>DELETE</li>
+               </ol>
+            </font>
+          </p>
+
+          <p class="text-justify" >
+            <FONT SIZE=2>
+              Estos métodos son empleados por los clientes para crear, manipular y eliminar datos en los servidores, respectivamente.
+            </font>
+          </p>
+
+      </article>
+
+      <!-- GET -->
+
+      <article class="post clearfix">
+
+        <h2 class="post-title"><a href="#">GET</a></h2>
+
+        <p class="text-justify" >
+          <FONT SIZE=2>
+            Esta la definimos como el medio para obtener un recurso del servidor
+          </font>
+        </p>
+        <p class="text-justify" >
+          <FONT SIZE=2>
+            A continuación, se mostrara como se usa
+          </font>
+        </p>
+
+      <div class="container text-center" style='float: center; padding: 12px; text-align: left;'>
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sintaxis de código
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        https://apipostrejs.fly.dev/[ nombre de la base de datos ]
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Parámetros
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Se usa el <strong>nombre</strong> de la tabla que se desee consultar
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Ejemplo
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        https://apipostrejs.fly.dev/postre
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+</article>
+      
+  <!-- POST -->
+
+  <article class="post clearfix">
+
+    <h2 class="post-title"><a href="#">POST</a></h2>
+
+    <p class="text-justify" >
+      <FONT SIZE=2>
+        Este se define para crear un recurso del servidor
+      </font>
+    </p>
+    <p class="text-justify" >
+      <FONT SIZE=2>
+        A continuación, se mostrara como se usa
+      </font>
+    </p>
+
+    <div class="container text-center" style='float: center; padding: 12px; text-align: left;'>
+      <div class="row align-items-start">
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Sintaxis de código
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    https://apipostrejs.fly.dev/Insertarpostre?id_pastel=[ ]&precio=[ ]&sabor=[ ]&tamano=[ ]
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Parámetros
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      Se usa el <strong>id, precio, sabor y tamaño</strong> de la tabla que se desee agregar
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Ejemplo
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    https://apipostrejs.fly.dev/Insertarpostre?id_pastel=1&precio=100&sabor=chocolate&tamano=grande
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+  </article>
+
+  <!-- PUT -->
+
+  <article class="post clearfix">
+
+    <h2 class="post-title"><a href="#">PUT</a></h2>
+
+    <p class="text-justify" >
+      <FONT SIZE=2>
+        Este se define para actualizar un recurso del servidor
+      </font>
+    </p>
+    <p class="text-justify" >
+      <FONT SIZE=2>
+        A continuación, se mostrara como se usa
+      </font>
+    </p>
+
+    <div class="container text-center" style='float: center; padding: 12px; text-align: left;'>
+      <div class="row align-items-start">
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    Sintaxis de código
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   https://apipostrejs.fly.dev/Actualizarpostre/1?sabor=[ ]
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Parámetros
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      Se usa el <strong>id y sección</strong> de la tabla que se desee actualizar
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    Ejemplo
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   https://apipostrejs.fly.dev/Actualizarpostre/1?sabor=fresa
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+   </div>
+
+  </article>
+
+  <!-- DELETE -->
+
+  <article class="post clearfix">
+
+    <h2 class="post-title"><a href="#">DELETE</a></h2>
+
+    <p class="text-justify" >
+      <FONT SIZE=2>
+        Y por ultimo, este se define para eliminar un recurso del servidor
+      </font>
+    </p>
+    <p class="text-justify" >
+      <FONT SIZE=2>
+        A continuación, se mostrara como se usa
+      </font>
+    </p>
+
+    <div class="container text-center" style='float: center; padding: 12px; text-align: left;'>
+      <div class="row align-items-start">
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                    Sintaxis de código
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse show" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   https://apipostrejs.fly.dev/Eliminarpostre/[ id ]
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    Parámetros
+                  </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      Se usa el <strong>id</strong> de la tabla que se desee eliminar
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                    Ejemplo
+                  </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   https://apipostrejs.fly.dev/Eliminarpostre/1
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+   </div>
+
+  </article>
+
+
+  </main>
+  <!-- /#content -->
+  
+  
+
+  <aside id="sidebar">
+
+      <section class="widget">
+          <h4 class="widgettitulo">Noticias</h4>
+          <ul>
+              <li><a href="#">Mejores Categorias</a></li>
+              <li><a href="#">Mejores Productos</a></li>
+              <li><a href="#">Ultimas Novedades </a></li>
+              <li><a href="#">Conocenos... </a></li>
+          </ul>
+      </section>
+      <section class="widget">
+          <h4 class="widgettitulo">Sitios Web</h4>
+          <ul>
+              <li><a href="https://www.facebook.com/">Facebook </a></li>
+              <li><a href="https://www.instagram.com/">Instagram </a></li>
+              <li><a href="http://www.tiktok.com/">Tiktok</a></li>
+              <li><a href="#">Mas... </a></li>
+          </ul>
+      </section>
+
+  </aside>
+  <!-- /#sidebar -->
+
+  <footer id="footer">
+
+      
+
+  </footer>
+  <!-- footer -->  
+</div>
+
+    
+
+    <footer class="footer">
+      <div class="container container-footer">
+        <div class="menu-footer">
+          <div class="contact-info">
+            <p class="title-footer">Información de Contacto</p>
+            <ul>
+              <li>Dirección: Opichen, Yucatan</li>
+              <li>Teléfono: 999 - ### - ####</li>
+              <li>Fax: 6566556</li>
+              <li>EmaiL: chankiiwik@support.com</li>
+            </ul>
+            <div class="social-icons">
+              <span class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+              <span class="youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+              <span class="tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+              </span>
+              <span class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="information">
+            <p class="title-footer">Información</p>
+            <ul>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="#">Información Delivery</a></li>
+              <li><a href="#">Politicas de Privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contactános</a></li>
+            </ul>
+          </div>
+
+          <div class="my-account">
+            <p class="title-footer">Mi cuenta</p>
+
+            <ul>
+              <li><a href="#">Mi cuenta</a></li>
+              <li><a href="#">Historial de ordenes</a></li>
+              <li><a href="#">Lista de deseos</a></li>
+              <li><a href="#">Boletín</a></li>
+              <li><a href="#">Reembolsos</a></li>
+            </ul>
+          </div>
+
+          <div class="newsletter">
+            <p class="title-footer">Boletín informativo</p>
+
+            <div class="content">
+              <p>
+                Gracias por visitar nuestra pagina, cualquier aclaracion
+                comunicarse con nuestro servivio de atencion
+              </p>
+              <input type="email" placeholder="Ingresa el correo aquí..." />
+              <button>Correo</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Desarrollado por Servicios Link &copy; 2023</p>
+
+          <img src="/img/payment.png" alt="Pagos" />
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
